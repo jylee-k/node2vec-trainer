@@ -12,3 +12,5 @@ Test the endpoint
 ```bash
 python example_request.py
 ```
+
+The model should be saved to the ./model directory that is mounted to the container.

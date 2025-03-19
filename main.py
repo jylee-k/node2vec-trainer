@@ -25,7 +25,7 @@ def receive_graph(data: GraphData):
 
     # train the node2vec model
     model = node2vec.Node2Vec(G, dimensions=64, walk_length=30, num_walks=10)
-    model.fit(window_size=10, min_count=1, batch_words=4)
+    model.fit(window=10, min_count=1, batch_words=4)
 
     # save the model
     model_path = os.path.join(MODEL_DIR, "node2vec_model.kv")
