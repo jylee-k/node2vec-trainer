@@ -5,7 +5,7 @@
 
 Build and run trainer container
 ```bash
-docker build -t node2vec-image
+docker build -t node2vec-image .
 docker run --name node2vec-container -p 8001:8001 -v $(pwd)/model:/app/model node2vec-image
 ```
 Test the endpoint
