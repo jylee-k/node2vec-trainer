@@ -16,8 +16,7 @@ def send_graph(G):
 
     # Send the graph to the target URL
     response = requests.post(TARGET_URL, json={"graph": graph_data})
+    print(response.json())
     
-    return {"message": "Graph sent", "client_response": response.json()}
-
 if __name__ == "__main__": 
     send_graph(G)
